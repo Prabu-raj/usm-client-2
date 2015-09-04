@@ -156,8 +156,8 @@
                 <div class="card-pf-title"> Management Network </div>
                 <div class="col-md-12">
                     <c3chart bindto-id="gauge-kbps-chart">
-                        <chart-column column-id="Mbps" column-values="{{clusterdetail.mockCluster.management_network.inbound + clusterdetail.mockCluster.management_network.outbound}}" column-type="gauge" column-color="{{clusterdetail.getStatusColor((clusterdetail.mockCluster.management_network.inbound + clusterdetail.mockCluster.management_network.outbound)/100*100)}}" />
-                        <chart-gauge min="0" max="100" units="{{clusterdetail.mockCluster.management_network.inbound + clusterdetail.mockCluster.management_network.outbound}} Mbps" width="10" />
+                        <chart-column column-id="Mbps" column-values="{{clusterdetail.mockCluster.managementNetwork.inbound + clusterdetail.mockCluster.managementNetwork.outbound}}" column-type="gauge" column-color="{{clusterdetail.getStatusColor((clusterdetail.mockCluster.managementNetwork.inbound + clusterdetail.mockCluster.managementNetwork.outbound)/100*100)}}" />
+                        <chart-gauge min="0" max="100" units="{{clusterdetail.mockCluster.managementNetwork.inbound + clusterdetail.mockCluster.managementNetwork.outbound}} Mbps" width="10" />
                         <chart-tooltip show-tooltip="false"></chart-tooltip>
                         <chart-size chart-height="100"></chart-size>
                     </c3chart>
@@ -166,9 +166,9 @@
                     <div class="row">
                         <div class="col-md-12"> </div>
                         <div class="col-md-6 col-xs-6">Inbound</div>
-                        <div class="col-md-6 col-xs-6 bold">{{clusterdetail.mockCluster.management_network.inbound}} Mbps</div>
+                        <div class="col-md-6 col-xs-6 bold">{{clusterdetail.mockCluster.managementNetwork.inbound}} Mbps</div>
                         <div class="col-md-6 col-xs-6">Outbound</div>
-                        <div class="col-md-6 col-xs-6 bold">{{clusterdetail.mockCluster.management_network.outbound}} Mbps</div>
+                        <div class="col-md-6 col-xs-6 bold">{{clusterdetail.mockCluster.managementNetwork.outbound}} Mbps</div>
                     </div>
                 </div>
             </div>
@@ -178,8 +178,8 @@
                 <div class="card-pf-title"> Cluster network </div>
                 <div class="col-md-12">
                     <c3chart bindto-id="gauge-kbps1-chart">
-                        <chart-column column-id="Data Rate" column-values="{{clusterdetail.mockCluster.cluster_network.inbound+clusterdetail.mockCluster.cluster_network.outbound}}" column-type="gauge" column-color="{{clusterdetail.getStatusColor((clusterdetail.mockCluster.cluster_network.inbound + clusterdetail.mockCluster.cluster_network.outbound)/100*100)}}" />
-                        <chart-gauge min="0" max="100" units="{{clusterdetail.mockCluster.cluster_network.inbound+clusterdetail.mockCluster.cluster_network.outbound}} Gbps" width="10" />
+                        <chart-column column-id="Data Rate" column-values="{{clusterdetail.mockCluster.clusterNetwork.inbound+clusterdetail.mockCluster.clusterNetwork.outbound}}" column-type="gauge" column-color="{{clusterdetail.getStatusColor((clusterdetail.mockCluster.clusterNetwork.inbound + clusterdetail.mockCluster.clusterNetwork.outbound)/100*100)}}" />
+                        <chart-gauge min="0" max="100" units="{{clusterdetail.mockCluster.clusterNetwork.inbound+clusterdetail.mockCluster.clusterNetwork.outbound}} Gbps" width="10" />
                         <chart-tooltip show-tooltip="false"></chart-tooltip>
                         <chart-size chart-height="100"></chart-size>
                     </c3chart>
@@ -188,9 +188,9 @@
                     <div class="row">
                         <div class="col-md-12"> </div>
                         <div class="col-md-6 col-xs-6">Inbound</div>
-                        <div class="col-md-6 col-xs-6 bold">{{clusterdetail.mockCluster.cluster_network.inbound}} Gbps</div>
+                        <div class="col-md-6 col-xs-6 bold">{{clusterdetail.mockCluster.clusterNetwork.inbound}} Gbps</div>
                         <div class="col-md-6 col-xs-6">Outbound</div>
-                        <div class="col-md-6 col-xs-6 bold">{{clusterdetail.mockCluster.cluster_network.outbound}} Gbps</div>
+                        <div class="col-md-6 col-xs-6 bold">{{clusterdetail.mockCluster.clusterNetwork.outbound}} Gbps</div>
                     </div>
                 </div>
             </div>
